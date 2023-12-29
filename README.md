@@ -24,7 +24,7 @@ QRTools is a simple web application that allows users to generate QR codes and b
 
 ## Demo
 
-You can view a live demo of QRTools [here](https://example.com/qrtools-demo).
+You can view a live demo of QRTools [here](https://tame.wtf/Demos/QRTools).
 
 ## Usage
 
