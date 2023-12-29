@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500&display=swap');
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+header {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Karla', sans-serif;
+    font-size: 2em;
+}
+
+main {
+    font-family: 'Karla', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.generator-section {
+    font-family: 'Karla', sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+input,
+select,
+.button {
+    font-family: 'Karla', sans-serif;
+}
+
+input {
+    padding: 10px;
+    width: 70%;
+    box-sizing: border-box;
+    background-color: #1d1d1d; /* Dark background for OLED */
+    color: #fff;
+    border: 2px solid #555;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+select {
+    padding: 10px;
+    background-color: #1d1d1d;
+    color: #fff;
+    border: 2px solid #555;
+    border-radius: 8px;
+    outline: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+}
+
+.button {
+    padding: 12px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.generate-button {
+    background-color: #3498db; /* Subdued blue */
+}
+
+.print-button {
+    background-color: #27ae60; /* Subdued green */
+    margin-left: 10px;
+}
+
+.button:hover {
+    filter: brightness(90%);
+}
+
+.code-section {
+    font-family: 'Karla', sans-serif;
+    margin-top: 20px;
+    background-color: #111; /* Dark background for OLED */
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+    display: none; /* initially hide the section */
+}
+
+.code-section.visible {
+    display: flex; /* show the section when it has the 'visible' class */
+    opacity: 1;
+    animation: none; /* Reset animation when visible */
+}
+
+#code canvas {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* Adjust the existing styles for better alignment */
+
+.generator-section {
+    margin-bottom: 40px; /* Increase the margin for better separation */
+}
+
+.button {
+    margin-top: 10px; /* Add some top margin to buttons for spacing */
+}
