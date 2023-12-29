@@ -6,6 +6,7 @@ A web-based tool for generating QR codes and barcodes easily. Users can enter te
 
 - [Description](#description)
 - [Features](#features)
+- [Demo](#demo)
 - [Usage](#usage)
 - [License](#license)
 
@@ -17,8 +18,13 @@ QRTools is a simple web application that allows users to generate QR codes and b
 
 - **Code Type Selection:** Choose between generating a QR code or a barcode.
 - **Easy Input:** Enter text or a URL to generate the code.
+- **Copy to Clipboard:** Quickly copy the generated code with a single click.
 - **Print Functionality:** Print the generated code directly from the browser.
 - **Stylish Interface:** The application features a sleek and responsive design.
+
+## Demo
+
+You can view a live demo of QRTools [here](https://example.com/qrtools-demo).
 
 ## Usage
 
